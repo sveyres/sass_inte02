@@ -1,0 +1,13 @@
+@import "base";
+.monHeader{
+    background-color: #281400;
+    color: white;
+}
+h1,h2{
+    font-family: $fontTitle;
+    font-weight: 900;
+}
+h3,dt{
+    font-family: $fontTitle;
+    font-weight: 400;
+}
