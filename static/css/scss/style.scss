@@ -72,28 +72,62 @@ h3,dt {
             span{
                 font-weight: bold;
             }
-        }
-        div {
-            padding: 0.5em;
-        }
-    .pageProduit{
-        padding: 0;
-        article {
-            margin: 0.5em;
-            box-shadow: 0 0 1em lightgrey;
-            img {
-                width: 40%;
-                height: auto;
+            div {
+                padding: 0.5em;
             }
-            h4,h5{
-                margin: 0;
+        }
+    }
+    .pageProduit{
+        padding: 0em;
+        article {
+            display: flex;
+            margin: 0.5em;
+            padding: 1em;
+            box-shadow: 0 0 1em lightgrey;
+            .articleImages{
+                width: 30%;
+                img {
+                    width:100%;
+                    height: auto;
+                }
+                .appercus{
+                    display: flex;
+                    img{
+                        margin: 0.2em;
+                    }
+                }
+            }
+            .descriptifProduit{
+                padding: 0 1em;
+                display: flex;
+                .btnPrix,.infoProduit{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1em;
+                    input,button{
+                        background-color: inherit;
+                        border: 1px solid #A28F61;
+                        border-radius: 5px;
+                        padding: 0.5em 2em;
+                        color: #A28F61;
+                        width:100%;
+                        text-transform: uppercase;
+                        margin-bottom: 0.5em;
+                    }
+                    .infoProduit{
+                        flex:2;
+                    }
+                    .btnPrix{
+                        flex:1;
+
+                    }
+                }
+
             }
             h4{
+                margin: 0;
                 text-transform: uppercase;
                 margin-top: 0.5em;
-            }
-            h5{
-                color: grey;
             }
             .soldOut {
                 color: #929292;
@@ -106,14 +140,13 @@ h3,dt {
             }
             span{
                 font-weight: bold;
+                font-size: 2em;
             }
         }
-        div {
-            padding: 0.5em;
-        }
+
 
     }
-    }
+
 
 }
 .monFooter {
@@ -141,10 +174,10 @@ h3,dt {
         }
     }
     button {
-    background-color: inherit;
-    border: 1px solid $colorLinkFooter;
-    border-radius: 5px;
-    padding: 0 1em;
+        background-color: inherit;
+        border: 1px solid $colorLinkFooter;
+        border-radius: 5px;
+        padding: 0 1em;
     }
     input,button {
         height: 35px;
